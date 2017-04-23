@@ -1,0 +1,20 @@
+<h1>History of Rounds</h1>
+
+<table>
+  <tr>
+    <th>Computer Move</th>
+    <th>Player Move</th>
+    <th>Outcome</th>
+  </tr>
+
+
+  <% Round.all.each do |round| %>
+  <tr>
+    <td> <%= round.computer_move %> </td>
+    <td> <%= round.player_move %> </td>
+    <td> <%= round.outcome %> </td>
+  </tr>
+
+  <% end %>
+
+</table>
